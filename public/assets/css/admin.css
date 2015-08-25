@@ -1,0 +1,94 @@
+/* Admin CSS */
+
+.automargin
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#wrapper
+{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#crop_data_latest
+{
+	position: absolute;
+	top: 0px;
+	width: 180px;
+}
+
+#crop_preview_latest
+{
+	width: 300px;
+	height: 105px;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	right: 0px;
+	top: 0px;
+	border: 1px solid black;
+	margin-top: 20px;
+}
+
+#crop_preview_latest_ui img
+{
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	z-index: 100;
+}
+
+#crop_preview_archive
+{
+	width: 175px;
+	height: 126px;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	right: 0px;
+	top: 0px;
+	border: 1px solid black;
+}
+
+#crop_preview_archive_image
+{
+	width: 175px;
+}
+
+#crop_preview_archive_ui img
+{
+	position: absolute;
+	top: 0px;
+	width: 175px;
+	z-index: 100;
+}
+
+#crop_container_archive
+{
+	margin-top: 120px;
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.spacer
+{
+	clear: both;
+}
+
+#latest
+{
+	width: 740px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+}
+
+.cropper-container /* Fix for weird placement */
+{
+	top: 0px !important;
+}
