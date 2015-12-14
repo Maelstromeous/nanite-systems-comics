@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '85.159.214.60',
+			'host'      => '192.168.207.218',
 			'database'  => 'nanitesystems',
 			'username'  => 'nanitesystems',
-			'password'  => 'ohhaithere',
+			'password'  => 'ps2isawesome!',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -114,7 +114,7 @@ return array(
 		'cluster' => false,
 
 		'default' => array(
-			'host'     => '127.0.0.1',
+			'host'     => '192.168.201.230',
 			'port'     => 6379,
 			'database' => 1,
 		),
