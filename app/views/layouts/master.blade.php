@@ -27,7 +27,7 @@
 		</div>
 
 		<div id="footer" class="automargin contentBack">
-			 Kogoros &copy; <?= date("Y") ?> - Website proudly hosted and developed by <a href="http://twitter.com/Maelstrome26">@Maelstrome26</a>
+			 Kogoros &copy; <?= date("Y") ?> - Website proudly hosted and developed by <a href="http://twitter.com/Maelstromeous">@Maelstromeous</a>
 		</div>
 
 		<script src="<?= URL::to('assets/js/jquery-2.1.1.min.js')?>"></script>
