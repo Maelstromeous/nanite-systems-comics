@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://nanitesystemscomic.com',
+	'url' => 'https://www.nanitesystemscomic.com',
 
 	/*
 	|--------------------------------------------------------------------------
