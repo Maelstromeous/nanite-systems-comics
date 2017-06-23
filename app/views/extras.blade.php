@@ -9,10 +9,10 @@
 	<p class="section_subheader">Wallpapers</p>
 	<div class="automargin" style="width: 670px; overflow: hidden;">
 		<div class="padder" style="float: left;">
-			<a href="http://alpha.wallhaven.cc/wallpaper/107841"><img src="<?= URL::to('assets/img/extras/wallpaper1.jpg')?>" /></a>
+			<a href="https://alpha.wallhaven.cc/wallpaper/107841"><img src="<?= URL::to('assets/img/extras/wallpaper1.jpg')?>" /></a>
 		</div>
 		<div class="padder" style="float: left; margin-left: 10px;">
-			<a href="http://alpha.wallhaven.cc/wallpaper/107842"><img src="<?= URL::to('assets/img/extras/wallpaper2.jpg')?>" /></a>
+			<a href="https://alpha.wallhaven.cc/wallpaper/107842"><img src="<?= URL::to('assets/img/extras/wallpaper2.jpg')?>" /></a>
 		</div>
 	</div>
 

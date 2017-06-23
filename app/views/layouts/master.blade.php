@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Orbitron:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Noto+Sans|Orbitron:400,700' rel='stylesheet' type='text/css'>
 		@yield('head')
 		<link rel="stylesheet" href="<?= URL::to('assets/css/bootstrap.min.css')?>">
 		<link rel="stylesheet" href="<?= URL::to('assets/css/stylesheet.css')?>">
