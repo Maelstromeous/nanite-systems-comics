@@ -12,7 +12,8 @@
 		<meta name="author" content="Korogos">
 		<meta property="og:title" content="@yield('title')" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="<?= Request::url(); ?>" />		<meta property="og:image" content="<?= URL::to('assets/img/logo.png') ?>" />
+		<meta property="og:url" content="<?= Request::url(); ?>" />
+		<meta property="og:image" content="<?= URL::to('assets/img/logo.png') ?>" />
 		<meta property="og:description" content="Nanite Systems Comics is a comic series based on the game Planetside 2.">
 		<link rel="shortcut icon" href="<?= URL::to('favicon.ico?v=2')?>" />
 	</head>

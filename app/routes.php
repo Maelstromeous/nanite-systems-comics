@@ -11,6 +11,9 @@
 |
 */
 
+// Uncomment below for production
+// URL::forceSchema('https');
+
 $maint = 0;
 
 if ($maint == 1)

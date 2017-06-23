@@ -34,7 +34,7 @@ class AdminController extends BaseController {
 					$input["comicTime"] = "00:00:00";
 				}
 
-				$destinationPath = "/var/www/nanitesystemscomics.com/html/public/uploads/";
+				$destinationPath = "/var/www/html/nanitesystemscomics.com/html/public/uploads/";
 
 				$input["imageName"] = Input::file('image')->getClientOriginalName();
 				$input["imagePath"] = $destinationPath.$input["imageName"];
