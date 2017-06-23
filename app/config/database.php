@@ -45,44 +45,16 @@ return array(
 	*/
 
 	'connections' => array(
-
-		'sqlite' => array(
-			'driver'   => 'sqlite',
-			'database' => __DIR__.'/../database/production.sqlite',
-			'prefix'   => '',
-		),
-
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '192.168.207.218',
-			'database'  => 'nanitesystems',
-			'username'  => 'nanitesystems',
-			'password'  => 'ps2isawesome!',
+			'host'      => 'local_mysql57',
+			'database'  => 'FILL',
+			'username'  => 'FILL',
+			'password'  => 'FILL',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
-		),
-
-		'pgsql' => array(
-			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'forge',
-			'username' => 'forge',
-			'password' => '',
-			'charset'  => 'utf8',
-			'prefix'   => '',
-			'schema'   => 'public',
-		),
-
-		'sqlsrv' => array(
-			'driver'   => 'sqlsrv',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
-			'prefix'   => '',
-		),
-
+		)
 	),
 
 	/*
@@ -109,16 +81,6 @@ return array(
 	|
 	*/
 
-	'redis' => array(
-
-		'cluster' => false,
-
-		'default' => array(
-			'host'     => '192.168.201.230',
-			'port'     => 6379,
-			'database' => 1,
-		),
-
-	),
+	'redis' => array(),
 
 );

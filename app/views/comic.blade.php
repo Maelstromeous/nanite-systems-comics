@@ -29,7 +29,7 @@
 
 $("#toTop").click(function(event) {
 	var body = $("html, body");
-	body.animate({scrollTop:0}, '1000', 'swing', function() {
+	body.animate({scrollTop:0}, '1000', 'swing', function() { 
 	});
 });
 </script>

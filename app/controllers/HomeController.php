@@ -35,34 +35,53 @@ class HomeController extends BaseController {
 
 	public function comic($comicID)
 	{
-		$data["current"] = DB::table('comics')
-			->where('dataID', $comicID)
+		$date = date("Y-m-d H:00:01");
+
+		$count = DB::table('comics')
 			->where('active', 1)
+			->where('comicDate', '<', $date)
+			->orderBy('dataID', "desc")
+			->take(1)
+			->remember(600)
 			->get();
+
+		$count = $count[0]->dataID;
+		$nextCount = $comicID + 1;
+		$prevCount = $comicID - 1;
+
+		if ($nextCount <= $count) // If there is is a next
+		{
+			$data["next"] = DB::table('comics')
+				->where('dataID', $nextCount)
+				->where('active', 1)
+				->take(1)
+				->remember(172800)
+				->get();
+		}
+		else
+		{
+			$next = FALSE;
+		}
 
 		$data["first"] = DB::table('comics')
 			->orderBy('dataID', 'asc')
 			->take(1)
-			->remember(86400)
+			->remember(172800)
 			->get();
-
-		$data["next"] = DB::table('comics')
-			->where('dataID', '>', $comicID)
+		$data["current"] = DB::table('comics')
+			->where('dataID', $comicID)
 			->where('active', 1)
-			->orderBy('dataID', 'asc')
-			->take(1)
+			->remember(172800)
 			->get();
-
 		$data["prev"] = DB::table('comics')
-			->where('dataID', '<', $comicID)
+			->where('dataID', $prevCount)
 			->where('active', 1)
-			->take(1)
-			->orderBy('dataID', 'desc')
+			->remember(172800)
 			->get();
-
 		$data["last"] = DB::table('comics')
 			->orderBy('dataID', "desc")
 			->where('active', 1)
+			->remember(172800)
 			->take(1)
 			->get();
 
@@ -75,7 +94,7 @@ class HomeController extends BaseController {
 		$data["comics"] = DB::table('comics')
 			->where('active', 1)
 			->where('comicDate', '<', $date)
-			->orderBy('dataID', 'desc')
+			->orderBy('comicDate', 'desc')
 			->remember(600)
 			->get();
 
