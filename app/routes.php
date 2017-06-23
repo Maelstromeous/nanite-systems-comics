@@ -12,7 +12,7 @@
 */
 
 // Uncomment below for production
-// URL::forceSchema('https');
+URL::forceSchema('https');
 
 $maint = 0;
 
